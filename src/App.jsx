@@ -52,6 +52,7 @@ const App = () => {
   <option value="Fruits">Fruits</option>
   <option value="Dairy">Dairy</option>
   <option value="Veggies">Veggies</option>
+  <option value="Bakery">Bakery</option>
 </select>
 
       {/* Render filtered product list and pass add-to-cart handler */}
