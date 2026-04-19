@@ -46,12 +46,13 @@ const App = () => {
       <DarkModeToggle darkMode={darkMode} onToggle={handleToggleDarkMode} />
 
       {/* Implement category filter dropdown */}
-      <label>Filter by Category: </label>
-      <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="all">All</option>
-        <option value="Fruits">Fruits</option>
-        <option value="Dairy">Dairy</option>
-      </select>
+     <label>Filter by Category: </label>
+<select value={category} onChange={(e) => setCategory(e.target.value)}>
+  <option value="all">All</option>
+  <option value="Fruits">Fruits</option>
+  <option value="Dairy">Dairy</option>
+  <option value="Veggies">Veggies</option>
+</select>
 
       {/* Render filtered product list and pass add-to-cart handler */}
       <ProductList products={filteredProducts} onAddToCart={handleAddToCart} />
